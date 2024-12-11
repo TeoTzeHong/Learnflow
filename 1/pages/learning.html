@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Learning - LEARN FLOW</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/learning.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="learn">L</span><span class="flow">Flow</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="learning.html" class="active"><i class="fas fa-book"></i> Learning</a></li>
+            <li><a href="homework.html"><i class="fas fa-tasks"></i> Homework</a></li>
+            <li><a href="notices.html"><i class="fas fa-bell"></i> Notices</a></li>
+        </ul>
+        <div class="user-section">
+            <button id="loginBtn" class="login-btn">Login</button>
+            <div class="user-profile hidden">
+                <img src="../images/default-avatar.png" alt="User Avatar">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="learning-dashboard">
+            <h1>Your Learning Dashboard</h1>
+            
+            <div class="progress-overview">
+                <div class="progress-card">
+                    <h3>Daily Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%">75%</div>
+                    </div>
+                </div>
+                <div class="progress-card">
+                    <h3>Weekly Goals</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%">60%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="daily-lessons">
+                <h2>Today's Practice Questions</h2>
+                <div class="lesson-grid">
+                    <div class="lesson-card">
+                        <div class="lesson-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Mathematics</h3>
+                        <p>Solve the quadratic equation: 2x² + 5x - 12 = 0</p>
+                        <span class="duration">10 min</span>
+                        <button class="start-btn">Start Practice</button>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-icon"><i class="fas fa-flask"></i></div>
+                        <h3>Science</h3>
+                        <p>What is the difference between mitosis and meiosis in cell division?</p>
+                        <span class="duration">15 min</span>
+                        <button class="start-btn">Start Practice</button>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-icon"><i class="fas fa-book"></i></div>
+                        <h3>Literature</h3>
+                        <p>Analyze the theme of power in George Orwell's "Animal Farm"</p>
+                        <span class="duration">12 min</span>
+                        <button class="start-btn">Start Practice</button>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Geography</h3>
+                        <p>Explain the formation of tectonic plates and their role in earthquakes</p>
+                        <span class="duration">15 min</span>
+                        <button class="start-btn">Start Practice</button>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-icon"><i class="fas fa-atom"></i></div>
+                        <h3>Physics</h3>
+                        <p>Calculate the acceleration of an object given its mass and applied force</p>
+                        <span class="duration">20 min</span>
+                        <button class="start-btn">Start Practice</button>
+                    </div>
+                    <div class="lesson-card">
+                        <div class="lesson-icon"><i class="fas fa-language"></i></div>
+                        <h3>English Grammar</h3>
+                        <p>Identify and correct the misplaced modifiers in given sentences</p>
+                        <span class="duration">8 min</span>
+                        <button class="start-btn">Start Practice</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/learning.js"></script>
+</body>
+</html> 

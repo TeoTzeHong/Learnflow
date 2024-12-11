@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Notices - LEARN FLOW</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/notices.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="learn">L</span><span class="flow">Flow</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="learning.html"><i class="fas fa-book"></i> Learning</a></li>
+            <li><a href="homework.html"><i class="fas fa-tasks"></i> Homework</a></li>
+            <li><a href="notices.html" class="active"><i class="fas fa-bell"></i> Notices</a></li>
+        </ul>
+        <div class="user-section">
+            <button id="loginBtn" class="login-btn">Login</button>
+            <div class="user-profile hidden">
+                <img src="../images/default-avatar.png" alt="User Avatar">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="notices-dashboard">
+            <h1>School Notice Hub</h1>
+            
+            <div class="notice-filters">
+                <button class="filter-btn active" data-filter="all">All Notices</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="parents">Parent Notices</button>
+            </div>
+
+            <div class="notices-grid">
+                <div class="notice-card academic">
+                    <div class="notice-header">
+                        <span class="notice-tag academic">Academic</span>
+                        <span class="notice-date">Today</span>
+                    </div>
+                    <h3>End of Term Exams Schedule</h3>
+                    <p>Final examinations will begin next week. Please check the detailed schedule attached.</p>
+                    <div class="notice-footer">
+                        <button class="details-btn">View Details</button>
+                        <i class="fas fa-paperclip"></i>
+                    </div>
+                </div>
+
+                <div class="notice-card events">
+                    <div class="notice-header">
+                        <span class="notice-tag events">Event</span>
+                        <span class="notice-date">Tomorrow</span>
+                    </div>
+                    <h3>Annual Sports Day</h3>
+                    <p>Join us for the annual sports day celebration. Various competitions and activities planned.</p>
+                    <div class="notice-footer">
+                        <button class="details-btn">View Details</button>
+                    </div>
+                </div>
+
+                <div class="notice-card parents">
+                    <div class="notice-header">
+                        <span class="notice-tag parents">Parents</span>
+                        <span class="notice-date">Next Week</span>
+                    </div>
+                    <h3>Parent-Teacher Meeting</h3>
+                    <p>Schedule for the upcoming parent-teacher conference. Please book your slots.</p>
+                    <div class="notice-footer">
+                        <button class="details-btn">View Details</button>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teacher-tools">
+                <h2>Teacher Tools</h2>
+                <div class="tools-grid">
+                    <button class="tool-btn">
+                        <i class="fas fa-plus-circle"></i>
+                        Create Notice
+                    </button>
+                    <button class="tool-btn">
+                        <i class="fas fa-file-upload"></i>
+                        Upload Resources
+                    </button>
+                    <button class="tool-btn">
+                        <i class="fas fa-envelope"></i>
+                        Send Messages
+                    </button>
+                    <button class="tool-btn">
+                        <i class="fas fa-chart-bar"></i>
+                        View Analytics
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/notices.js"></script>
+</body>
+</html> 

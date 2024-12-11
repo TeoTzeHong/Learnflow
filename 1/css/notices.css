@@ -1,0 +1,181 @@
+.notices-dashboard {
+    padding: 20px;
+}
+
+.notices-dashboard h1 {
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Notice Filters */
+.notice-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    background: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Notices Grid */
+.notices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.notice-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+}
+
+.notice-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.notice-tag {
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.notice-tag.academic {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.notice-tag.events {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.notice-tag.parents {
+    background: #e8f5e9;
+    color: #388e3c;
+}
+
+.notice-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.notice-card h3 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.notice-card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.notice-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+    background: #357ABD;
+}
+
+.notice-footer i {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* Teacher Tools */
+.teacher-tools {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.teacher-tools h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tool-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #f5f7fa;
+    border: none;
+    border-radius: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tool-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.tool-btn i {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .notice-filters {
+        flex-direction: row;
+        padding: 0 10px;
+    }
+    
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+} 

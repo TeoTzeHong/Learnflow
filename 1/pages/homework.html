@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Assistant - LEARN FLOW</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/homework.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="learn">L</span><span class="flow">Flow</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="learning.html"><i class="fas fa-book"></i> Learning</a></li>
+            <li><a href="homework.html" class="active"><i class="fas fa-tasks"></i> Homework</a></li>
+            <li><a href="notices.html"><i class="fas fa-bell"></i> Notices</a></li>
+        </ul>
+        <div class="user-section">
+            <button id="loginBtn" class="login-btn">Login</button>
+            <div class="user-profile hidden">
+                <img src="../images/default-avatar.png" alt="User Avatar">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="homework-dashboard">
+            <h1>AI Homework Assistant</h1>
+
+            <div class="homework-grid">
+                <div class="homework-section question-section">
+                    <h2><i class="fas fa-question-circle"></i> Ask a Question</h2>
+                    <div class="input-area">
+                        <textarea placeholder="Type your question here or upload an image of your homework..."></textarea>
+                        <div class="upload-area" id="uploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop image here or click to upload</p>
+                            <input type="file" id="fileInput" accept="image/*" hidden>
+                        </div>
+                        <button class="submit-btn">Get Help</button>
+                    </div>
+                </div>
+
+                <div class="homework-section tasks-section">
+                    <h2><i class="fas fa-clipboard-list"></i> Assignment Tracker</h2>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <input type="checkbox" id="task1">
+                            <label for="task1">Math Assignment - Due Tomorrow</label>
+                            <span class="priority high">High</span>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task2">
+                            <label for="task2">Science Project - Due Next Week</label>
+                            <span class="priority medium">Medium</span>
+                        </div>
+                        <div class="task-item">
+                            <input type="checkbox" id="task3">
+                            <label for="task3">English Essay - Due Friday</label>
+                            <span class="priority low">Low</span>
+                        </div>
+                    </div>
+                    <button class="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+                </div>
+            </div>
+
+            <div class="study-tips">
+                <h2><i class="fas fa-lightbulb"></i> Study Tips</h2>
+                <div class="tips-carousel">
+                    <div class="tip active">
+                        <p>"Break your study sessions into 25-minute focused intervals."</p>
+                    </div>
+                    <div class="tip">
+                        <p>"Review your notes within 24 hours of taking them to improve retention."</p>
+                    </div>
+                    <div class="tip">
+                        <p>"Teach concepts to others to better understand them yourself."</p>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="prev-tip"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-tip"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/homework.js"></script>
+</body>
+</html> 
